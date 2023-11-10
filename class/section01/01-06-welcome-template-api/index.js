@@ -1,9 +1,5 @@
 function checkEmail(email){
-    if (!email || !email.includes("@")){
-        return false;
-    } else {
-        return true;
-    }
+    return !(!email || !email.includes("@"));
 }
 
 function getWelcomeTemplate({name, age, memberOf, createdDate}){
